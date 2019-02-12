@@ -1,13 +1,13 @@
 JMP START
 
 DATA:
-DB 			  01
-DB			  02
-DB			  03
-DB			  04
-DB			  05
-DB			  06
-DB			  07
+DB        01
+DB        02
+DB        03
+DB        04
+DB        05
+DB        06
+DB        07
 
 START:
 SETB		  RS0
@@ -19,7 +19,7 @@ MOV R2, 	#27
 MOVC	A,  @A+PC     ;после выполнения 
                     ;этой инструкции в А БУдет 0xD2 
 ;3
-SETB 		RS1
+SETB 		  RS1
 MOV 10h, 	#28
 MOV R1, 	#27
 MOV R3, 	#10
